@@ -1,0 +1,51 @@
+{
+  "users": {
+    "newUser": {
+      "emailPrefix": "hexa.user",
+      "emailDomain": "test.com",
+      "name": "Test User",
+      "password": "Password@123"
+    },
+    "passwordMismatchUser": {
+      "emailPrefix": "hexa.mismatch",
+      "emailDomain": "test.com",
+      "name": "Mismatch User",
+      "password": "Password@123",
+      "confirmPassword": "Different@456"
+    }
+  },
+  "messages": {
+    "passwordMismatch": "Passwords do not match",
+    "addedToCartSuffix": "added to cart!"
+  },
+  "catalog": [
+    { "name": "Men's T-Shirt", "price": 12.99 },
+    { "name": "Men's Jeans", "price": 29.99 },
+    { "name": "Men's Jacket", "price": 49.99 },
+    { "name": "Women's Jacket", "price": 48.99 },
+    { "name": "Women's Sneakers", "price": 38.99 }
+  ],
+  "cart": {
+    "products": [
+      { "name": "Men's T-Shirt", "price": 12.99 },
+      { "name": "Men's Jeans", "price": 29.99 }
+    ]
+  },
+  "checkout": {
+    "shipping": {
+      "firstName": "Test",
+      "lastName": "User",
+      "email": "test.user@test.com",
+      "address": "12 MG Road",
+      "city": "Kochi",
+      "postalCode": "682001",
+      "country": "US"
+    },
+    "payment": {
+      "cardNumber": "4111111111111111",
+      "cardholderName": "Test User",
+      "expiry": "12/30",
+      "cvc": "123"
+    }
+  }
+}

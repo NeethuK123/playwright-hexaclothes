@@ -1,0 +1,20 @@
+{
+  "name": "playwright-hexaclothes",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "node -e \"for (const d of ['allure-results','allure-report','results','test-results','playwright-report']) require('fs').rmSync(d, { recursive: true, force: true })\"",
+    "test": "npm run clean && playwright test",
+    "test:headed": "npm run clean && playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "allure:generate": "allure generate allure-results -o allure-report --clean",
+    "allure:open": "allure open allure-report",
+    "test:allure": "npm run clean && (playwright test || echo Some tests failed - see the Allure report) && npm run allure:generate && npm run allure:open"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^24.0.0",
+    "allure-commandline": "^2.46.1",
+    "allure-playwright": "^3.14.0",
+    "dotenv": "^17.0.0"
+  }
+}

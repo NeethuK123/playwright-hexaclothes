@@ -1,0 +1,11 @@
+{
+  "product1": {
+    "name": "Men's T-Shirt"
+  },
+  "product2": {
+    "name": "Women's Jacket"
+  },
+  "product3": {
+    "name": "Kids Backpack"
+  }
+}

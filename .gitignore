@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Environment (keep .env.example committed as the template)
+
+
+# Test output
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+allure-results/
+allure-report/
+results/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
